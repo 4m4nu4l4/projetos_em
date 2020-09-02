@@ -44,42 +44,66 @@
       
         <div class="container">
 
-          <form>
-<input type="text" id="nome" placeholder="nome">
-<input type="text" id="sobrenome" placeholder="sobrenome" class="form-control">
-
-<label for="escola">nome da sua escola</label>
-<input type="text" id="escola" placeholder="nome" class="form-control">
-
-
-          </form>
-            <div class="row">
-              <div class="col-sm-12 col-md-4">
-      coluna1
-              </div>
-              <div class="col-sm-12 col-md-4">
-      coluna2
-              </div>
-              <div class="col-sm-12 col-md-4">
-      coluna3
-              </div>
-      
-            </div>
       
             <div class="row">
               <div class="col-sm-12 col-md-6">
-                <br> <button type="button" class="btn btn-outline-success">salvar</button>
-                <button type="button" class="btn btn-outline-danger">cancelar</button>
+
+        <br><div class="form-control">
+          <label for="nome">nome: </label>
+          <input type="text" class="form-control" id="nome">
+        </div><br><br><br>
         
-                
+        <input class="form-check-input" type="checkbox" id="embalagem">
+               <p><label for="embalagem">Embalado</label>
+              </div></p>
+
+          <br>
+            <div class="col-sm-12 col-md-6">
+              <div class="form-group">
+                <label for="categoria">Categoria:</label>
+                <select class="form-control" id="categoria">
+<option>brigadeiro</option>
+<option>beijinho</option>
+<option>trufa</option>
+                </select>
               </div>
 
-            
-      
-              </div>
               <div class="col-sm-12 col-md-6">
-      
-              </div>
+                <div class="form-group">
+                  <label for="sabor">sabor:</label>
+                  <select class="form-control" id="categoria">
+  <option>chocolate</option>
+  <option>morango</option>
+  <option>nutella</option>
+  <option>maracuja</option>
+  <option>coco</option>
+                  </select>
+                </div>
+ <br>
+ <br>
+ <br>             
+                <div class="form-control">
+                  <label for="Valor">Valor: </label>
+                  <input type="number" class="form-control" id="Valor">
+                </div>
+<br>
+<br>
+<br>
+                <div class="form-control">
+                  <label for="quantidade">quantidade: </label>
+                  <input type="number" class="form-control" id="quantidade">
+                </div>
+
+<br>
+<br>
+<br>
+                <div class="form-control">
+<label for="descrição">igredientes</label>
+<textarea class="form-control" id="descrição">
+
+</textarea>
+
+                </div>
       
             </div>
         </div>
