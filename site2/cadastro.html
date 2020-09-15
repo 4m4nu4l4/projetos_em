@@ -11,7 +11,8 @@
     <title>Site Responsível</title>
   </head>
   <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-primary">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
     <a class="navbar-brand" href="#">Doces
         <img src="imagens/brigadeiro.jpg">
     </a>
@@ -36,77 +37,78 @@
         <button class="btn btn-primary my-2 my-sm-0" type="submit">Pesquisar</button>
       </form>
     </div>
-  </nav>
-  
+    </nav>
+      
+    <div class="container">
+
+        <form>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+
+                    <div class="form-group">
+                        <label for="nome">nome:</label>
+                        <input type="text" class="form-control" id="nome">
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="embalagem">
+                        <label for="embalagem">embalado</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="valor">valor:</label>
+                        <input type="number" min="0" max="50" class="form-control" id="valor">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quantidade">quantidade</label>
+                        <input type="number" min="0" class="form-control" id="quantidade">
+                    </div>
+
+                </div>
+            <div class="col-sm-12 col-md-6">
+                <div class="form-group">
+                    <label for="categoria">categoria:</label>
+                    <select class="form-control" id="categoria">
+                        <option>brigadeiro</option>
+                        <option>beijinho</option>
+                        <option>trufa</option>
+                    </select>
+                </div>   
+            
+                <div class="form-group">
+                    <label for="sabor">sabor</label>
+                    <select class="form-control" id="sabor">
+                        <option>chocolate</option>
+                        <option>morango</option>
+                        <option>nutella</option>
+                        <option>maracujá</option>
+                        <option>coco</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="ingredientes">ingredientes</label>
+                    <textarea class="form-control" id="ingredientes" rows="3"></textarea>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <button type="reset" class="btn btn-danger btn-block">cancelar</button>
+                    </div>
+
+                        <div class="col-sm-12 col-md-6">
+                        <button type="submit" class="btn btn-primary btn-block">salvar</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+    
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-      
-        <div class="container">
-
-      
-            <div class="row">
-              <div class="col-sm-12 col-md-6">
-
-        <br><div class="form-control">
-          <label for="nome">nome: </label>
-          <input type="text" class="form-control" id="nome">
-        </div><br><br><br>
-        
-        <input class="form-check-input" type="checkbox" id="embalagem">
-               <p><label for="embalagem">Embalado</label>
-              </div></p>
-
-          <br>
-            <div class="col-sm-12 col-md-6">
-              <div class="form-group">
-                <label for="categoria">Categoria:</label>
-                <select class="form-control" id="categoria">
-<option>brigadeiro</option>
-<option>beijinho</option>
-<option>trufa</option>
-                </select>
-              </div>
-
-              <div class="col-sm-12 col-md-6">
-                <div class="form-group">
-                  <label for="sabor">sabor:</label>
-                  <select class="form-control" id="categoria">
-  <option>chocolate</option>
-  <option>morango</option>
-  <option>nutella</option>
-  <option>maracuja</option>
-  <option>coco</option>
-                  </select>
-                </div>
- <br>
- <br>
- <br>             
-                <div class="form-control">
-                  <label for="Valor">Valor: </label>
-                  <input type="number" class="form-control" id="Valor">
-                </div>
-<br>
-<br>
-<br>
-                <div class="form-control">
-                  <label for="quantidade">quantidade: </label>
-                  <input type="number" class="form-control" id="quantidade">
-                </div>
-
-<br>
-<br>
-<br>
-                <div class="form-control">
-<label for="descrição">igredientes</label>
-<textarea class="form-control" id="descrição">
-
-</textarea>
-
-                </div>
-      
-            </div>
-        </div>
-      
-  </body>
+    </body>
   </html>
